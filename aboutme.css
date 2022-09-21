@@ -68,6 +68,24 @@ header .menu ul li.btn a:hover
     left: 0;
     bottom: 0;
 }
+.name
+{
+    width:500px;
+    padding: 0;
+    margin:0;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.name h1
+{
+    text-align: center;
+    font-size: 150%;
+    color: #01FF70;
+    max-width: 650px;
+}
 .text
 {
     width:500px;
@@ -79,7 +97,6 @@ header .menu ul li.btn a:hover
     left: 50%;
     transform: translatex(-50%);
 }
-
 .text p
 {
     text-align: center;
