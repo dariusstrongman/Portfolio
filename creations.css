@@ -80,22 +80,27 @@ header .menu ul li.btn a:hover
     left:0px;
 }
 
+.image-container {
+    text-align: center; /* Center the image container */
+    margin: 40px auto; /* Increase the top margin to bring the image down */
+    width: fit-content; /* Adjust the width to fit the content */
+}
 
+.responsive-image {
+    width: 25%; /* Set the image to be 1/4th of its original size */
+    height: auto;
+    display: block; /* Display as block to use margin auto */
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .responsive-image {
+        max-width: 90%; /* Adjust the max-width for smaller screens */
+    }
+}
 
 /* body
 {
@@ -201,3 +206,52 @@ header .menu ul li.btn a:hover
                 -5px 0 0 #0f0;
     transition-delay: 0s, .5s, .5s, 1s;
 } */
+
+button {
+    background-color: #3498db; /* Primary color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+button:hover {
+    background-color: #2ecc71; /* Secondary color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.download-button {
+    background-color: #3498db; /* Primary color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensure it behaves like a button */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.download-button:hover {
+    background-color: #2ecc71; /* Secondary color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.download-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}

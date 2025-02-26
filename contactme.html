@@ -16,7 +16,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="creations.html">My Creations</a></li>
                 <li><a href="aboutme.html">About me</a></li>
-                <li><a href="family.html">My family</a></li>
                 <li class="btn"><a href="contactme.html">keep in touch</a></li>
             </ul>
         </div>
@@ -29,33 +28,33 @@
             <!--  form -->
             <div class="contact form">
                 <h3>Send a message</h3>
-                <form>
+                <form action="send_email.php" method="post">
                     <div class="formbox">
                         <div class="row50">
                             <div class="inputbox">
                                 <span>First Name</span>
-                                <input type="text" placeholder="Jason">
+                                <input type="text" name="firstName" placeholder="Jason" required>
                             </div>
                             <div class="inputbox">
                                 <span>Last Name</span>
-                                <input type="text" placeholder="Bourne">
+                                <input type="text" name="lastName" placeholder="Bourne" required>
                             </div>      
                         </div>
                         <div class="row50">
                             <div class="inputbox">
                                 <span>Email</span>
-                                <input type="text" placeholder="Jasonbourne@gmail.com">
+                                <input type="email" name="email" placeholder="Jasonbourne@gmail.com" required>
                             </div>
                             <div class="inputbox">
                                 <span>Number</span>
-                                <input type="text" placeholder="555-555-5555">
+                                <input type="text" name="number" placeholder="555-555-5555">
                             </div>      
                         </div>
                         
                         <div class="row100">
                             <div class="inputbox">
                                 <span>Message</span>
-                                <textarea placeholder="Write your message here..."></textarea>
+                                <textarea name="message" placeholder="Write your message here..." required></textarea>
                             </div>
                         </div>    
                         <div class="row100">
@@ -85,10 +84,10 @@
                     </div>
                     <!-- social media -->
                     <ul class="sci">
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/dariusstroman" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/dariusstroman" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/dariusstroman" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/dariusstroman" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
